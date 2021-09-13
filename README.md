@@ -6,7 +6,7 @@ Diciembre 2021.
 
 ## Profesora
 
-Mtra. Gabriela de Jesús López Ruiz
+M. en C. Gabriela de Jesús López Ruiz
 
 Datos de contacto:
 
