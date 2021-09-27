@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--archivo: ej1_formulario.html-->
+    <title>Formulario 1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Humberto Alejandro Ortega Alcocer" />
+    <meta name="description" content="formulario 1 curriculum" />
+    <meta name="keywords" content="HTML, form" />
+    <meta
+      name="copyright"
+      content="&copy; 2021 Humberto Alejandro Ortega Alcocer"
+    />
+  </head>
+
+  <body>
+    <form
+      action="mailto:humbertoalejandroortegalcocer@gmail.com"
+      method="post"
+      name="formulario1"
+      autocomplete="on"
+    >
+      <fieldset>
+        <legend>Datos personales</legend>
+        Nombre:
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Coloca tu Nombre"
+          required
+        /><br /><br />
+        Apellido parterno:
+        <input
+          type="text"
+          id="a_paterno"
+          name="apellido paterno"
+          placeholder="Coloca tu apellido paterno"
+          required
+        /><br /><br />
+        Apellido materno:
+        <input
+          type="text"
+          id="a_materno"
+          name="apellido materno"
+          placeholder="Coloca tu apellido materno"
+          required
+        /><br /><br />
+        Correo electronico:
+        <input type="email" id="correo" name="correo" required /><br /><br />
+        Edad:
+        <input type="num" id="edad" name="edad" required /><br /><br />
+        fecha de cumpleanios:
+        <input
+          type="date"
+          id="cumpleanios"
+          name="cumpleanios"
+          required
+        /><br /><br />
+        genero:
+        <br /><br />
+        <input
+          type="radio"
+          name="hombre"
+          id="hombre"
+          value="hombre"
+        />Masculino<br />
+        <input
+          type="radio"
+          name="mujer"
+          id="mujer"
+          value="mujer"
+        />Femenino<br /><br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos academicos</legend>
+        Escuela:
+        <input
+          type="text"
+          id="Escuela"
+          name="Escuela"
+          placeholder="Coloca tu Escuela"
+        /><br /><br />
+        semestre:
+        <input
+          type="text"
+          id="semestre"
+          name="semestre"
+          placeholder="Coloca tu semestre"
+        /><br /><br />
+        Apellido materno:
+        <input
+          type="text"
+          id="a_materno"
+          name="apellido materno"
+          placeholder="Coloca tu apellido materno"
+        /><br /><br />
+        Correo electronico_institucional:
+        <input
+          type="email"
+          id="correo_institucional"
+          name="correo_institucional"
+        /><br /><br />
+        fecha y hora de inscripcion de la escuela:
+        <input
+          type="datetime-local"
+          id="fingreso"
+          name="fingreso"
+        /><br /><br />
+        materias cursadas:
+        <select
+          name="materias cursadas"
+          id="materias cursadas"
+          size="5"
+          multiple
+          required
+        >
+          <!-- seleccion multiple -->
+          <option value="mate_discretas">Matematicas discretas</option>
+          <option value="Tecnologia_web">Tecnologia_web</option>
+          <option value="IA">Inteligencia artificial</option>
+          <option value="Fisica">Fisica</option>
+          <option value="Calculo">Calculo</option>
+        </select>
+        <br /><br />
+        Estatus academico:
+        <select name="estatus" id="estatus" simple required>
+          <!-- seleccion simple -->
+          <option value="regular">regular</option>
+          <option value="irregular_sin_dictamen">irregular_sin_dictamen</option>
+          <option value="irregular_con_dictamenr">
+            irregular_con_dictamen
+          </option>
+        </select>
+        <br />
+      </fieldset>
+      <br /><br />
+      <input
+        type="submit"
+        id="enviar"
+        name="enviar"
+        value="enviar"
+      /><br /><br />
+      <input
+        type="reset"
+        id="limpie"
+        name="limpie"
+        value="limpie"
+      /><br /><br />
+    </form>
+  </body>
+</html>
