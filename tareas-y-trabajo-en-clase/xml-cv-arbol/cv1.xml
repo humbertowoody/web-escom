@@ -1,0 +1,114 @@
+<curriculum>
+  <mas-sobre-mi>
+    <frase>Visita el siguiente código para ver más:</frase>
+    <codigo formato="imagen"></codigo>
+  </mas-sobre-mi>
+  <perfil-profesional formato="texto"></perfil-profesional>
+  <experiencia-laboral>
+    <experiencia id="1">
+      <puesto formato="texto"></puesto>
+      <compañia formato="texto"></compañia>
+      <poblacion formato="texto"></poblacion>
+      <fecha-inicio formato="texto"></fecha-inicio>
+      <fecha-fin formato="texto"></fecha-fin>
+      <descripcion formato="texto"></descripcion>
+    </experiencia>
+    <experiencia id="2">
+      <puesto formato="texto"></puesto>
+      <compañia formato="texto"></compañia>
+      <poblacion formato="texto"></poblacion>
+      <fecha-inicio formato="texto"></fecha-inicio>
+      <fecha-fin formato="texto"></fecha-fin>
+      <descripcion formato="texto"></descripcion>
+    </experiencia>
+    <experiencia id="3">
+      <puesto formato="texto"></puesto>
+      <compañia formato="texto"></compañia>
+      <poblacion formato="texto"></poblacion>
+      <fecha-inicio formato="texto"></fecha-inicio>
+      <fecha-fin formato="texto"></fecha-fin>
+      <descripcion formato="texto"></descripcion>
+    </experiencia>
+  </experiencia-laboral>
+  <hard-skills>
+    <skill id="1">
+      <nombre-skill formato="texto"></nombre-skill>
+      <nivel-skill formato="texto"></nivel-skill>
+    </skill>
+    <skill id="2">
+      <nombre-skill formato="texto"></nombre-skill>
+      <nivel-skill formato="texto"></nivel-skill>
+    </skill>
+    <skill id="3">
+      <nombre-skill formato="texto"></nombre-skill>
+      <nivel-skill formato="texto"></nivel-skill>
+    </skill>
+    <skill id="4">
+      <nombre-skill formato="texto"></nombre-skill>
+      <nivel-skill formato="texto"></nivel-skill>
+    </skill>
+  </hard-skills>
+  <formacion-academica>
+    <institucion id="1">
+      <nombre-institucion formato="texto"></nombre-institucion>
+      <titulo-obtenido formato="texto"></titulo-obtenido>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+    </institucion>
+    <institucion id="2">
+      <nombre-institucion formato="texto"></nombre-institucion>
+      <titulo-obtenido formato="texto"></titulo-obtenido>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+    </institucion>
+    <institucion id="3">
+      <nombre-institucion formato="texto"></nombre-institucion>
+      <titulo-obtenido formato="texto"></titulo-obtenido>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+    </institucion>
+    <institucion id="4">
+      <nombre-institucion formato="texto"></nombre-institucion>
+      <titulo-obtenido formato="texto"></titulo-obtenido>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+    </institucion>
+  </formacion-academica>
+  <cursos>
+    <curso id="1">
+      <nombre-curso formato="texto"></nombre-curso>
+      <institucion formato="texto"></institucion>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+      <nivel-curso formato="texto"></nivel-curso>
+    </curso>
+    <curso id="2">
+      <nombre-curso formato="texto"></nombre-curso>
+      <institucion formato="texto"></institucion>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+      <nivel-curso formato="texto"></nivel-curso>
+    </curso>
+    <curso id="3">
+      <nombre-curso formato="texto"></nombre-curso>
+      <institucion formato="texto"></institucion>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+      <nivel-curso formato="texto"></nivel-curso>
+    </curso>
+    <curso id="4">
+      <nombre-curso formato="texto"></nombre-curso>
+      <institucion formato="texto"></institucion>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+      <nivel-curso formato="texto"></nivel-curso>
+    </curso>
+    <curso id="5">
+      <nombre-curso formato="texto"></nombre-curso>
+      <institucion formato="texto"></institucion>
+      <fecha-inicio formato="fecha"></fecha-inicio>
+      <fecha-fin formato="fecha"></fecha-fin>
+      <nivel-curso formato="texto"></nivel-curso>
+    </curso>
+  </cursos>
+</curriculum>
