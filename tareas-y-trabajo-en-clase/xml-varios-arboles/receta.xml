@@ -1,0 +1,40 @@
+<receta-imss>
+  <membrete-receta>
+    <logotipo></logotipo>
+    <nombre-institucion>INSTITUTO MEXICANO DEL SEGURO SOCIAL</nombre-institucion>
+    <subtitulo>SEGURIDAD Y SOLIDARIDAD SOCIAL</subtitulo>
+    <departamento>DIRECCIÓN DE PRESTACIONES MÉDICAS</departamento>
+    <leyenda>
+      RECTA INDIVIDUAL<br>
+      INFORMACIÓN CONFIDENCIAL
+    </leyenda>
+    <codigo barra=" consecutivo"></codigo>
+    <folio cadena-"alfanumerico"></folio>
+    <aviso>Esta receta no se surtirá después de las 72 horas de su expedición</aviso>
+  </membrete-receta>
+  <datos-paciente>
+    <nss></nss>
+    <a-medico></a-medico>
+    <nombre-paciente></nombre-paciente>
+    <delegacion></delegacion>
+    <unidad></unidad>
+    <cve-ptal></cve-ptal>
+    <consultorio></consultorio>
+    <turno></turno>
+  </datos-paciente>
+  <datos-receta>
+    <fecha-expedicion></fecha-expedicion>
+    <clave-medicamento></clave-medicamento>
+    <nombre-medicamento></nombre-medicamento>
+    <presentacion>
+      <contenido formula="alfanumerico"></contenido>
+    </presentacion>
+    <indicacion-medica cantidad="numero" tiempo="numero-hora" consumo="numero-dias"></indicacion-medica>
+  </datos-receta>
+  <datos-medico>
+    <nombre-medico></nombre-medico>
+    <firma></firma>
+    <cedula-profesional></cedula-profesional>
+    <matricula></matricula>
+  </datos-medico>
+</receta-imss>

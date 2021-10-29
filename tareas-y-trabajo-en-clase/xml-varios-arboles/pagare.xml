@@ -1,0 +1,24 @@
+<pagare>
+  <encabezado>
+    <titulo></titulo>
+    <numero></numero>
+    <cantidad></cantidad>
+  </encabezado>
+  <cuerpo>
+    <fecha></fecha>
+    <nombre></nombre>
+    <direccion></direccion>
+    <ciudad></ciudad>
+    <cantidad></cantidad>
+  </cuerpo>
+  <datos-deudor>
+    <nombre></nombre>
+    <direccion></direccion>
+    <poblacion></poblacion>
+    <telefono></telefono>
+  </datos-deudor>
+  <firma>
+    <nombre></nombre>
+    <firma-autografa></firma-autografa>
+  </firma>
+</pagare>

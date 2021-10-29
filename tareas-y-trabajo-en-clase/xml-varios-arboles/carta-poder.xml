@@ -1,0 +1,45 @@
+<carta-poder>
+  <encabezado>
+    <titulo>Carta Poder</titulo>
+    <fecha>
+      <dia>01</dia>
+      <mes>01</mes>
+      <anio>2021</anio>
+    </fecha>
+  </encabezado>
+  <cuerpo>
+    <nombre-juez></nombre-juez>
+    <solicitud></solicitud>
+    <nombre-otorgo></nombre-otorgo>
+    <capacidades>
+      <capacidad id="1">
+        <nombre-capacidad></nombre-capacidad>
+        <poder-concedido></poder-concedido>
+      </capacidad>
+      <capacidad id="2">
+        <nombre-capacidad></nombre-capacidad>
+        <poder-concedido></poder-concedido>
+      </capacidad>
+      <capacidad id="3">
+        <nombre-capacidad></nombre-capacidad>
+        <poder-concedido></poder-concedido>
+      </capacidad>
+    </capacidades>
+    <firma-testigo>
+      <nombre></nombre>
+      <firma-autografa></firma-autografa>
+    </firma-testigo>
+    <firma-otorgante>
+      <nombre></nombre>
+      <firma-autografa></firma-autografa>
+    </firma-otorgante>
+    <firma-testigo-1>
+      <nombre></nombre>
+      <firma-autografa></firma-autografa>
+    </firma-testigo-1>
+    <firma-testigo-2>
+      <nombre></nombre>
+      <firma-autografa></firma-autografa>
+    </firma-testigo-2>
+  </cuerpo>
+</carta-poder>

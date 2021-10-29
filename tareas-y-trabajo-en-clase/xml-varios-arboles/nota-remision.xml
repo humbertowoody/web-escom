@@ -1,0 +1,30 @@
+<nota-remision>
+  <titulo></titulo>
+  <datos-remision>
+    <num-remision></num-remision>
+    <num-pedido></num-pedido>
+    <fecha dia="texto" mes="texto" anio="numero"></fecha>
+    <cliente></cliente>
+    <domicilio></domicilio>
+    <ciudad></ciudad>
+    <telefono></telefono>
+  </datos-remision>
+  <cuerpo-remision>
+    <datos-por-linea>
+      <cantidad></cantidad>
+      <articulo></articulo>
+      <precio-unitario></precio-unitario>
+      <importe></importe>
+    </datos-por-linea>
+    <datos-de-compra>
+      <subtotal></subtotal>
+      <iva></iva>
+      <total></total>
+    </datos-de-compra>
+  </cuerpo-remision>
+  <pie-remision>
+    <formulo></formulo>
+    <conducto></conducto>
+    <recibi></recibi>
+  </pie-remision>
+</nota-remision>
