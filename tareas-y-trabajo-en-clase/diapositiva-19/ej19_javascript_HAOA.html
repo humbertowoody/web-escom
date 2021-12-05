@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Eventos</title>
+    <script lang="javascript">
+      // función para comprobar la edad en el campo.
+      function comprobarEdad(objeto) {
+        // si no es un número, mostramos error y enfocamos el campo.
+        if (isNaN(objeto.value)) {
+          alert('Introduzca una edad correcta');
+          objeto.value = "";
+          objeto.focus();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      Nombre:
+      <input
+        type="text"
+        name="nombre"
+        onblur='if(nombre.value=="") alert("Debe rellenar el campo nombre")'
+      />
+      <br />
+      Edad: <input type="text" name="edad" onblur="comprobarEdad(this)" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Cajas de Texto</title>
+    <script lang="javascript">
+      // función para validar la clave del usuario.
+      function ValidarClave() {
+        // cargamos el formulario del documento
+        with (document.formulario) {
+          if (Usuario.value == "") {
+            // si el usuario está vacío, mostramos una alerta y enfocamos el campo.
+            alert("Introduzca el nombre del usuario");
+            Usuario.focus();
+          } else if (Usuario.value == "humberto" && (Clave.value = "hola1234")) {
+            // si el usuario es "humberto" y la contraseña es "hola1234", mostramos una alerta
+            // de confirmación.
+            alert("Acceso permitido");
+          } else {
+            // en otro caso, mostramos una alerta de acceso denegado.
+            alert("Acceso denegado");
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="formulario">
+      Nombre: <input type="text" name="Usuario" />
+      <br />
+      Clave: <input type="text" name="Clave" onblur="ValidarClave()" />
+    </form>
+  </body>
+</html>
