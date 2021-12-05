@@ -1,8 +1,38 @@
 <html>
   <head>
     <title>Primer Evento</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="keywords" content="javascript, validacion, html" />
+    <meta name="author" content="Humberto Alejandro Ortega Alcocer" />
+    <meta
+      name="description"
+      content="Ejercicio de diapositiva 18 - javascript"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* estilos generales */
+      html,
+      body {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-weight: lighter;
+        background-color: cornsilk;
+        padding: 50px;
+      }
+
+      /* estilo para input */
+      #nombre {
+        background-color: aquamarine;
+      }
+    </style>
   </head>
   <body>
+    <h1>Prueba de Input</h1>
+    <p>
+      En este ejercicio se realiza una validación básica utilizando
+      <code>onblur</code>
+      para lanzar una alerta de validación.
+    </p>
     Nombre:
     <input
       type="text"
@@ -10,5 +40,6 @@
       id="nombre"
       onblur="if(this.value==='') alert('Debe rellenar el campo nombre!');"
     />
+    <p>&copy; Humberto Alejandro Ortega Alcocer - 2021</p>
   </body>
 </html>

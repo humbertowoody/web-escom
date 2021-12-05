@@ -1,32 +1,68 @@
 <html>
   <head>
     <title>Cajas de Texto</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="keywords"
+      content="javascript, validacion, html, eventos, login"
+    />
+    <meta name="author" content="Humberto Alejandro Ortega Alcocer" />
+    <meta
+      name="description"
+      content="Ejercicio de diapositiva 22 - javascript"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        background-color: aliceblue;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 15px;
+      }
+
+      form {
+        padding: 30px;
+        border: 1px dashed darksalmon;
+        background-color: beige;
+      }
+    </style>
     <script lang="javascript">
       // función para validar la clave del usuario.
       function ValidarClave() {
         // cargamos el formulario del documento
         with (document.formulario) {
-          if (Usuario.value == "") {
+          if (Usuario.value === "") {
             // si el usuario está vacío, mostramos una alerta y enfocamos el campo.
             alert("Introduzca el nombre del usuario");
             Usuario.focus();
-          } else if (Usuario.value == "humberto" && (Clave.value = "hola1234")) {
+          } else if (Usuario.value === "humberto" && (Clave.value === "hola1234")) {
             // si el usuario es "humberto" y la contraseña es "hola1234", mostramos una alerta
             // de confirmación.
-            alert("Acceso permitido");
+            alert("Acceso permitido! 🎉");
           } else {
-            // en otro caso, mostramos una alerta de acceso denegado.
-            alert("Acceso denegado");
+            // en otro caso, mostramos una alerta de acceso denegado, limpiamos los campos
+            // y enfocamos el usuario.
+            alert("Acceso denegado ❌");
+            Usuario.value = "";
+            Clave.value = "";
+            Usuario.focus();
           }
         }
       }
     </script>
   </head>
   <body>
+    <h1>Iniciar Sesión</h1>
+    <p>
+      Introduce tu usuario y contraseña en el siguiente formulario para iniciar
+      sesión:
+    </p>
     <form name="formulario">
       Nombre: <input type="text" name="Usuario" />
       <br />
       Clave: <input type="text" name="Clave" onblur="ValidarClave()" />
     </form>
+    <p>&copy; Humberto Alejandro Ortega Alcocer - 2021</p>
   </body>
 </html>

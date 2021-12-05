@@ -1,6 +1,32 @@
 <html>
   <head>
     <title>Eventos</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="keywords" content="javascript, validacion, html, eventos" />
+    <meta name="author" content="Humberto Alejandro Ortega Alcocer" />
+    <meta
+      name="description"
+      content="Ejercicio de diapositiva 19 - javascript"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        background-color: cornsilk;
+        padding: 25px;
+      }
+
+      form {
+        border: 1px solid cornflowerblue;
+        padding: 40px;
+      }
+
+      input {
+        background-color: aqua;
+      }
+    </style>
     <script lang="javascript">
       // función para comprobar la edad en el campo.
       function comprobarEdad(objeto) {
@@ -14,7 +40,14 @@
     </script>
   </head>
   <body>
+    <h1>Eventos en JS</h1>
+    <p>
+      En este ejercicio utilizamos <code>onblur</code> tanto con expresiones
+      locales como con funciones remotas, introduciendo así la posibilidad de
+      generar librerías de validación.
+    </p>
     <form>
+      <h3>Registro de Información:</h3>
       Nombre:
       <input
         type="text"
@@ -22,7 +55,9 @@
         onblur='if(nombre.value=="") alert("Debe rellenar el campo nombre")'
       />
       <br />
+      <br />
       Edad: <input type="text" name="edad" onblur="comprobarEdad(this)" />
     </form>
+    <p>&copy; Humberto Alejandro Ortega Alcocer - 2021</p>
   </body>
 </html>
