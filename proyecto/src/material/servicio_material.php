@@ -66,4 +66,25 @@ class ServicioMaterial
     // Si es válido, insertamos en la DB.
     return $this->db_material->insertarMaterial($material_nuevo);
   }
+
+  // Obtener materiales para un grupo.
+  public function obtenerMaterialesPorGrupo($id_grupo)
+  {
+    // Obtenemos todos los materiales.
+    $materialesCrudos = $this->obtenerMateriales();
+
+    // Creamos un arreglo para los resultados.
+    $materiales = array();
+
+    // Iteramos sobre los materiales.
+    foreach ($materialesCrudos as $material) {
+      // Validamos que pertenezcan al grupo en cuestión.
+      if ($material->subtema->tema->bloque->id_grupo == $id_grupo) {
+        $materiales[] = $material;
+      }
+    }
+
+    // Regresamos el resultado.
+    return $materiales;
+  }
 }

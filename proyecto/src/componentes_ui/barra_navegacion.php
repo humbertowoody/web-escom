@@ -91,6 +91,30 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/src/sesion.php');
     <?php
     } else {
       // Contenido si el usuario es un alumno.
+    ?>
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Alumno - Inicio') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/alumno/index.php">Inicio</a>
+      <div class="dropdown">
+        <div class="elemento-menu <?php if (TITULO_PAGINA == 'Alumno - Progreso' || TITULO_PAGINA == 'Alumno - Material') {
+                                    echo "elemento-menu-actual";
+                                  } ?>">Material Disponible</div>
+        <div class="dropdown-content">
+          <a href="/alumno/materiales.php">Materiales</a>
+          <a href="/alumno/progresos.php">Mi Progreso</a>
+        </div>
+      </div>
+
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Alumno - Perfil') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/alumno/perfil.php">Perfil</a>
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Alumno - Dudas') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/alumno/dudas.php">Dudas (Soporte)</a>
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Alumno - Ayuda') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/alumno/ayuda.php">Ayuda</a>
+    <?php
     }
   } else {
     // En caso de que no haya sesión inciada.

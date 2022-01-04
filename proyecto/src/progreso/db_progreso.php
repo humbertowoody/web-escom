@@ -109,12 +109,11 @@ class DBProgreso
     }
   }
 
-
   // Función para insertar un progreso en la base de datos.
   public function insertarProgreso($nuevoProgreso)
   {
     // Creamos la consulta.
-    $consulta = "INSERT INTO progresos (nombre,correo_electronico,asunto,descripcion) VALUES (\"" . $nuevoProgreso->nombre . "\",\"" . $nuevoProgreso->correo_electronico . "\",\"" . $nuevoProgreso->asunto . "\",\"" . $nuevoProgreso->descripcion . "\");";
+    $consulta = "INSERT INTO progresos (id_usuario,id_material) VALUES (\"" . $nuevoProgreso->id_usuario . "\",\"" . $nuevoProgreso->id_material . "\");";
 
     // Ejecutamos la consulta.
     $resultado = $this->conexion->query($consulta);

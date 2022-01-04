@@ -20,9 +20,7 @@ class DBBloque
     $this->conexion = $claseConexion->obtenerConexion();
   }
 
-  /**
-   * Función para convertir una fila de respuesta de la base de datos en un objeto Usuario.
-   */
+  // Función para convertir una fila en un objeto bloque.
   private function fila_a_modelo($fila_bloque)
   {
     // Creamos el nuevo objeto.
@@ -44,6 +42,7 @@ class DBBloque
     return $bloque;
   }
 
+  // Función para obtener todos los bloques.
   public function obtener_todos()
   {
     // Creamos la consulta.
