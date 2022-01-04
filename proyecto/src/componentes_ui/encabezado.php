@@ -10,7 +10,7 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/src/config.php');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Proyecto Final - Tecnologías Web 2021, Equipo 4">
-  <meta name="author" content="xxxx" />
+  <meta name="author" content="Equipo #4 Tecnologías para la Web" />
   <meta name="keywords" content="e-learning,saes,administracion,escom,alumnos" />
   <meta name="copyright" content="© Equipo 4, Tecnologías para la Web, 2021" />
   <title>
