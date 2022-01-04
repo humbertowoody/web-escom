@@ -5,6 +5,9 @@ include_once(dirname(dirname(dirname(__FILE__))) . "/src/usuario/usuario.php");
 // Importamos la conexión con la base de datos.
 include_once(dirname(dirname(dirname(__FILE__))) . "/src/db.php");
 
+// Importamos el servicio de Grupos (para referencias).
+include_once(dirname(dirname(dirname(__FILE__))) . "/src/grupo/servicio_grupo.php");
+
 class DBUsuario
 {
   // Variable para la conexión con la DB.
@@ -35,6 +38,16 @@ class DBUsuario
     $usuario->correo_secundario = $fila_usuario["correo_secundario"];
     $usuario->numero_identificador = $fila_usuario["numero_identificador"];
     $usuario->password = $fila_usuario["password"];
+    $usuario->id_grupo = $fila_usuario["id_grupo"];
+
+    if ($usuario->id_grupo != null) {
+      // Para obtener el Grupo referenciado.
+      $servicio_grupo = new ServicioGrupo();
+
+      // Obtener el grupo referenciado.
+      $usuario->grupo = $servicio_grupo->obtenerGrupoPorID($usuario->id_grupo);
+    }
+
 
     // Regresamos el objeto.
     return $usuario;
@@ -104,7 +117,7 @@ class DBUsuario
   public function actualizarUsuario($nuevoUsuario)
   {
     // Creamos la consulta.
-    $consulta = "UPDATE usuarios SET nombre=\"" . $nuevoUsuario->nombre . "\",ap_pat=\"" . $nuevoUsuario->ap_pat . "\",ap_mat=\"" . $nuevoUsuario->ap_mat . "\",correo_principal=\"" . $nuevoUsuario->correo_principal . "\",correo_secundario=\"" . $nuevoUsuario->correo_secundario . "\",tipo_usuario=\"" . $nuevoUsuario->tipo_usuario . "\",numero_identificador=\"" . $nuevoUsuario->numero_identificador . "\" WHERE id=" . $nuevoUsuario->id . ";";
+    $consulta = "UPDATE usuarios SET nombre=\"" . $nuevoUsuario->nombre . "\",ap_pat=\"" . $nuevoUsuario->ap_pat . "\",ap_mat=\"" . $nuevoUsuario->ap_mat . "\",correo_principal=\"" . $nuevoUsuario->correo_principal . "\",correo_secundario=\"" . $nuevoUsuario->correo_secundario . "\",tipo_usuario=\"" . $nuevoUsuario->tipo_usuario . "\",numero_identificador=\"" . $nuevoUsuario->numero_identificador . "\",password=\"" . $nuevoUsuario->password . "\",id_grupo=\"" . $nuevoUsuario->id_grupo . "\" WHERE id=" . $nuevoUsuario->id . ";";
 
     // Ejecutamos la consulta.
     $resultado = $this->conexion->query($consulta);
@@ -135,7 +148,7 @@ class DBUsuario
   public function insertarUsuario($nuevoUsuario)
   {
     // Creamos la consulta.
-    $consulta = "INSERT INTO usuarios (nombre,ap_pat,ap_mat,correo_principal,correo_secundario,tipo_usuario,numero_identificador,password) VALUES (\"" . $nuevoUsuario->nombre . "\",\"" . $nuevoUsuario->ap_pat . "\",\"" . $nuevoUsuario->ap_mat . "\",\"" . $nuevoUsuario->correo_principal . "\",\"" . $nuevoUsuario->correo_secundario . "\",\"" . $nuevoUsuario->tipo_usuario . "\",\"" . $nuevoUsuario->numero_identificador . "\",\"" . $nuevoUsuario->password . "\");";
+    $consulta = "INSERT INTO usuarios (nombre,ap_pat,ap_mat,correo_principal,correo_secundario,tipo_usuario,numero_identificador,password,id_grupo) VALUES (\"" . $nuevoUsuario->nombre . "\",\"" . $nuevoUsuario->ap_pat . "\",\"" . $nuevoUsuario->ap_mat . "\",\"" . $nuevoUsuario->correo_principal . "\",\"" . $nuevoUsuario->correo_secundario . "\",\"" . $nuevoUsuario->tipo_usuario . "\",\"" . $nuevoUsuario->numero_identificador . "\",\"" . $nuevoUsuario->password . "\",\"" . $nuevoUsuario->id_grupo . "\");";
 
     // Ejecutamos la consulta.
     $resultado = $this->conexion->query($consulta);

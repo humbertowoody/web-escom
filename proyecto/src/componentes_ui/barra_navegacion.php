@@ -20,12 +20,13 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/src/sesion.php');
                                 echo "elemento-menu-actual";
                               } ?>" href="/admin/index.php">Inicio</a>
       <div class="dropdown">
-        <div class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Usuarios' || TITULO_PAGINA == 'Admin - Grupos') {
+        <div class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Usuarios' || TITULO_PAGINA == 'Admin - Grupos' || TITULO_PAGINA == 'Admin - Progresos') {
                                     echo "elemento-menu-actual";
                                   } ?>">Gestión de Miembros y Grupos</div>
         <div class="dropdown-content">
           <a href="/admin/usuarios.php">Usuarios</a>
           <a href="/admin/grupos.php">Grupos</a>
+          <a href="/admin/progresos.php">Progresos</a>
         </div>
       </div>
       <div class="dropdown">
@@ -43,13 +44,10 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/src/sesion.php');
       <a class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Perfil') {
                                 echo "elemento-menu-actual";
                               } ?>" href="/admin/perfil.php">Perfil</a>
-      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Contraseña') {
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Dudas') {
                                 echo "elemento-menu-actual";
-                              } ?>" href="/admin/password.php">Contraseña</a>
-      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Soporte') {
-                                echo "elemento-menu-actual";
-                              } ?>" href="/admin/contactos.php">Soporte</a>
-      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Ayuda') {
+                              } ?>" href="/admin/dudas.php">Dudas (Soporte)</a>
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Ayuda') {
                                 echo "elemento-menu-actual";
                               } ?>" href="/admin/ayuda.php">Ayuda</a>
     <?php

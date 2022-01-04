@@ -16,14 +16,14 @@ require_once(dirname(__FILE__) . '/src/componentes_ui/encabezado.php');
     Si requieres atención técnica por parte de nuestro equipo, llena el formulario a continuación
     y un administrador se pondrá en contacto contigo.
   </p>
-  <form action="/acciones/registro_contacto.php" method="post">
+  <form action="/acciones/registro-duda-general.php" method="post">
     <p>
       Nombre:
       <input type="text" name="nombre" id="nombre">
     </p>
     <p>
       Correo Electrónico:
-      <input type="email" name="correo" id="correo">
+      <input type="email" name="correo_electronico" id="correo_electronico">
     </p>
     <p>
       Asunto:

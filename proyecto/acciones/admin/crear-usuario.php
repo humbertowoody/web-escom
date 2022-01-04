@@ -15,6 +15,7 @@ $usuario->correo_secundario = $_POST["correo_secundario"];
 $usuario->numero_identificador = $_POST["numero_identificador"];
 $usuario->tipo_usuario = $_POST["tipo_usuario"];
 $usuario->password = $_POST["password"];
+$usuario->id_grupo = isset($_POST["id_grupo"]) ? $_POST["id_grupo"] : null;
 
 // Instanciamos el servicio del usuario.
 $servicio = new ServicioUsuario();

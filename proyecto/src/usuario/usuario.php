@@ -10,4 +10,6 @@ class Usuario
   public $tipo_usuario; // string
   public $numero_identificador; // string
   public $password; // string
+  public $id_grupo; // int
+  public $grupo; // Objeto Grupo
 }

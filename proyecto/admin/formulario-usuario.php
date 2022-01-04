@@ -8,6 +8,15 @@ require_once(dirname(dirname(__FILE__)) . '/src/usuario/servicio_usuario.php');
 // Instanciamos el servicio de usuarios.
 $servicio = new ServicioUsuario();
 
+// Importamos el servicio de grupos.
+require_once(dirname(dirname(__FILE__)) . '/src/grupo/servicio_grupo.php');
+
+// Instanciamos el servicio de grupos.
+$servicio_grupo = new ServicioGrupo();
+
+// Obtenemos todos los grupos.
+$grupos = $servicio_grupo->obtenerGrupos();
+
 // Definimos el título de la página.
 define('TITULO_PAGINA', 'Admin - Usuarios');
 
@@ -83,6 +92,20 @@ if ($editar_usuario) {
           Contraseña: <input class="campo" type="text" name="password" id="password" value="<?php if ($editar_usuario) {
                                                                                               echo $usuario->password;
                                                                                             } ?>">
+        </p>
+        <p>
+          Grupo: <select name="id_grupo" id="id_grupo">
+            <option value="" disabled>Selecciona un grupo...</option>
+            <?php
+            foreach ($grupos as $grupo) {
+            ?>
+              <option value="<?php echo $grupo->id; ?>" <?php if ($editar_usuario && $usuario->id_grupo == $grupo->id) {
+                                                          echo "selected";
+                                                        } ?>><?php echo $grupo->nombre . "(" . $grupo->id . ")"; ?></option>
+            <?php
+            }
+            ?>
+          </select>
         </p>
       </div>
     </div>

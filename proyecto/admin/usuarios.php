@@ -36,6 +36,7 @@ $usuarios = $servicio->obtenerUsuarios();
           <th>Email</th>
           <th>Email Secundario</th>
           <th>Número de Control</th>
+          <th>Grupo</th>
           <th>Acciones</th>
         </tr>
       </thead>
@@ -52,6 +53,7 @@ $usuarios = $servicio->obtenerUsuarios();
             <td><?php echo $usuario->correo_principal; ?></td>
             <td><?php echo $usuario->correo_secundario; ?></td>
             <td><?php echo $usuario->numero_identificador; ?></td>
+            <td><?php echo $usuario->grupo->nombre; ?></td>
             <td class="acciones">
               <a href="/acciones/admin/eliminar-usuario.php?id=<?php echo $usuario->id; ?>">❌</a>
               <a href="/admin/formulario-usuario.php?id=<?php echo $usuario->id; ?>">✏️</a>
