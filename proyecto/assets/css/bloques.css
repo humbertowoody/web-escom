@@ -1,0 +1,40 @@
+#bloques {
+  flex-grow: 1;
+  background-color: #7f8c8d;
+  padding: 5%;
+}
+
+.tabla-bloques {
+  background-color: #bdc3c7;
+  text-align: center;
+}
+
+.tabla-bloques > table,
+th,
+td {
+  padding: 5px;
+  border: 1px dashed black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.acciones {
+  text-align: center;
+}
+
+.agregar-bloque {
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #1abc9c;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.agregar-bloque:hover {
+  background-color: #27ae60;
+  transition-duration: 0.5s;
+}
