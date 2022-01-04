@@ -17,4 +17,9 @@ class Config
   public static $rol_admin = 'ADMINISTRADOR';
   public static $rol_profesor = 'PROFESOR';
   public static $rol_alumno = 'ALUMNO';
+
+  // Configuración de tipos de material.
+  public static $material_url = 'URL';
+  public static $material_video = 'VIDEO';
+  public static $material_pdf = 'PDF';
 }

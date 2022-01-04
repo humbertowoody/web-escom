@@ -1,0 +1,32 @@
+#formulario-material {
+  flex-grow: 1;
+  background-color: #7f8c8d;
+  padding: 5px 5%;
+}
+
+#formulario-material > form {
+  border: 3px dashed #e74c3c;
+  border-radius: 7px;
+  background-color: #bdc3c7;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.campo {
+  border-radius: 6px;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
