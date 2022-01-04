@@ -1,8 +1,4 @@
 <?php
-// Borramos la sesión.
-session_start();
-session_destroy();
-
 // Importamos archivo de configuración.
 require_once(dirname(__FILE__) . '/src/config.php');
 

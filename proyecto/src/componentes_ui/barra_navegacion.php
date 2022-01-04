@@ -53,6 +53,42 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/src/sesion.php');
     <?php
     } elseif ($sesion_tipo_usuario == Config::$rol_profesor) {
       // Contenido si el usuario es un maestro.
+    ?>
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Profesor - Inicio') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/profesor/index.php">Inicio</a>
+      <div class="dropdown">
+        <div class="elemento-menu <?php if (TITULO_PAGINA == 'Profesor - Usuarios' || TITULO_PAGINA == 'Profesor - Grupos' || TITULO_PAGINA == 'Profesor - Progresos') {
+                                    echo "elemento-menu-actual";
+                                  } ?>">Gestión de Miembros y Grupos</div>
+        <div class="dropdown-content">
+          <a href="/profesor/usuarios.php">Usuarios</a>
+          <a href="/profesor/grupos.php">Grupos</a>
+          <a href="/profesor/progresos.php">Progresos</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="elemento-menu <?php if (TITULO_PAGINA == 'Profesor - Bloques' || TITULO_PAGINA == 'Profesor - Temas' || TITULO_PAGINA == 'Profesor - SubTemas' || TITULO_PAGINA == 'Profesor - Materiales') {
+                                    echo "elemento-menu-actual";
+                                  } ?>">Gestión de Contenido</div>
+        <div class="dropdown-content">
+          <a href="/profesor/bloques.php">Bloques</a>
+          <a href="/profesor/temas.php">Temas</a>
+          <a href="/profesor/subtemas.php">Subtemas</a>
+          <a href="/profesor/materiales.php">Materiales</a>
+        </div>
+      </div>
+
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Profesor - Perfil') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/profesor/perfil.php">Perfil</a>
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Profesor - Dudas') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/profesor/dudas.php">Dudas (Soporte)</a>
+      <a class="elemento-menu <?php if (TITULO_PAGINA == 'Profesor - Ayuda') {
+                                echo "elemento-menu-actual";
+                              } ?>" href="/profesor/ayuda.php">Ayuda</a>
+    <?php
     } else {
       // Contenido si el usuario es un alumno.
     }
