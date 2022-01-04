@@ -1,0 +1,19 @@
+Proyecto Web
+
+Equipo #4
+
+-- Base de Datos --
+
+Para la base de datos, usamos MySQL v8.
+
+Dentro de la carpeta de /db se pueden encontrar dos scripts:
+
+- db_sin_data.sql: solo contiene la estructura de la DB pero no tiene datos.
+- db_con_data.sql: contiene datos de ejemplo.
+
+-- Código --
+
+Para el desarrollo se utilizó PHP por sí mismo (sin servidores externos) por lo que
+debería funcionar bajo cualquier ambiente siempre y cuando el directorio
+de ejecución base del intérprete de PHP se encuentre en la raíz del proyecto.
+
