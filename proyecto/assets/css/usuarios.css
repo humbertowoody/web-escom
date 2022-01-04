@@ -5,7 +5,7 @@
 }
 
 .tabla-usuarios {
-  background-color: #bdc3c7;
+  text-align: center;
 }
 
 .tabla-usuarios > table,
@@ -16,6 +16,7 @@ td {
 }
 
 table {
+  background-color: #bdc3c7;
   border-collapse: collapse;
 }
 

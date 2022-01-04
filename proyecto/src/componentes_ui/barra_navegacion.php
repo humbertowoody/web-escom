@@ -29,7 +29,7 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/src/sesion.php');
         </div>
       </div>
       <div class="dropdown">
-        <div class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Bloques' || TITULO_PAGINA == 'Admin - Temas' || TITULO_PAGINA == 'Admin - Subtemas' || TITULO_PAGINA == 'Admin - Materiales') {
+        <div class="elemento-menu <?php if (TITULO_PAGINA == 'Admin - Bloques' || TITULO_PAGINA == 'Admin - Temas' || TITULO_PAGINA == 'Admin - SubTemas' || TITULO_PAGINA == 'Admin - Materiales') {
                                     echo "elemento-menu-actual";
                                   } ?>">Gestión de Contenido</div>
         <div class="dropdown-content">
