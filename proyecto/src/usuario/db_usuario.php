@@ -130,4 +130,17 @@ class DBUsuario
     // Regresamos el resultado (boolean)
     return $resultado;
   }
+
+  // Función para insertar un usuario en la base de datos.
+  public function insertarUsuario($nuevoUsuario)
+  {
+    // Creamos la consulta.
+    $consulta = "INSERT INTO usuarios (nombre,ap_pat,ap_mat,correo_principal,correo_secundario,tipo_usuario,numero_identificador,password) VALUES (\"" . $nuevoUsuario->nombre . "\",\"" . $nuevoUsuario->ap_pat . "\",\"" . $nuevoUsuario->ap_mat . "\",\"" . $nuevoUsuario->correo_principal . "\",\"" . $nuevoUsuario->correo_secundario . "\",\"" . $nuevoUsuario->tipo_usuario . "\",\"" . $nuevoUsuario->numero_identificador . "\",\"" . $nuevoUsuario->password . "\");";
+
+    // Ejecutamos la consulta.
+    $resultado = $this->conexion->query($consulta);
+
+    // Regresamos el resultado (boolean).
+    return $resultado;
+  }
 }

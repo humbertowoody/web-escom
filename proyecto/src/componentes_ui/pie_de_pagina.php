@@ -13,7 +13,7 @@ require_once(dirname(dirname(dirname(__FILE__))) . '/src/sesion.php');
   <?php
   if ($sesion_iniciada == true) {
   ?>
-    <p>Usuario: <?php echo $sesion_nombre_usuario; ?></p>
+    <p>Usuario: <?php echo $sesion_nombre_usuario . "(" . $sesion_tipo_usuario . ")"; ?></p>
   <?php } else { ?>
     <p>Equipo 4 - Desarrollo de Aplicaciones Web</p>
   <?php } ?>

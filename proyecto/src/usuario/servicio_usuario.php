@@ -1,5 +1,8 @@
 <?php
+// Incluimos la conexión con la base de datos.
 include_once(dirname(dirname(dirname(__FILE__))) . "/src/usuario/db_usuario.php");
+
+// Incluimos el modelo del usuario
 include_once(dirname(dirname(dirname(__FILE__))) . "/src/usuario/usuario.php");
 
 class ServicioUsuario
@@ -63,5 +66,14 @@ class ServicioUsuario
   {
     // Ejecutamos la operación en la base de datos.
     return $this->db_usuario->eliminarUsuario($id_usuario);
+  }
+
+  // Función para crear un Usuario
+  public function crearUsuario($usuario_nuevo)
+  {
+    // Validación
+
+    // Si es válido, insertamos en la DB.
+    return $this->db_usuario->insertarUsuario($usuario_nuevo);
   }
 }

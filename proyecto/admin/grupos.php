@@ -3,23 +3,56 @@
 require_once(dirname(dirname(__FILE__)) . '/src/config.php');
 
 // Definimos el título de la página.
-define('TITULO_PAGINA', 'Admin - Usuarios');
+define('TITULO_PAGINA', 'Admin - Grupos');
 
 // Encabezado de la página.
 require_once(dirname(dirname(__FILE__)) . '/src/componentes_ui/encabezado.php');
+
+// Cargamos el servicio de grupos.
+require_once(dirname(dirname(__FILE__)) . '/src/grupo/servicio_grupo.php');
+
+// Instanciamos el servicio.
+$servicio = new ServicioGrupo();
+
+// Obtenemos los grupos.
+$grupos = $servicio->obtenerGrupos();
 ?>
 
-<link rel="stylesheet" href="/assets/css/index.css">
-<div id="pagina-principal">
-  <h1><?php echo Config::$nombre_proyecto; ?>, una nueva forma de aprender.</h1>
+<link rel="stylesheet" href="/assets/css/grupos.css">
+<div id="grupos">
+  <h1>Grupos de <?php echo Config::$nombre_proyecto; ?>.</h1>
   <p>
-    Plataforma de E-Learning integrado para la <b>Escuela Superior de Cómputo</b> del
-    <b>Instituto Politécnico Nacional</b>.
+    En esta sección se presenta un CRUD básico de grupos en la plataforma.
   </p>
-  <p>
-    Vista de Administrador.
-  </p>
-  <img src="/assets/img/mural.jpeg" alt="Mural de la Escuela Superior de Cómputo">
+  <div class="tabla-grupos">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        foreach ($grupos as $grupo) {
+        ?>
+          <tr>
+            <td><?php echo $grupo->id; ?></td>
+            <td><?php echo $grupo->nombre; ?></td>
+            <td class="acciones">
+              <a href="/acciones/admin/eliminar-grupo.php?id=<?php echo $grupo->id; ?>">❌</a>
+              <a href="/admin/formulario-grupo.php?id=<?php echo $grupo->id; ?>">✏️</a>
+            </td>
+          </tr>
+        <?php
+        }
+        ?>
+      </tbody>
+    </table>
+  </div>
+  <p>Para agregar un nuevo grupo a la plataforma, haz click en el siguiente botón:</p>
+  <a class="agregar-grupo" href="/admin/formulario-grupo.php">➕ Agregar Grupo</a>
 </div>
 
 

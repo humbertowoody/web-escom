@@ -54,7 +54,7 @@ $usuarios = $servicio->obtenerUsuarios();
             <td><?php echo $usuario->numero_identificador; ?></td>
             <td class="acciones">
               <a href="/acciones/admin/eliminar-usuario.php?id=<?php echo $usuario->id; ?>">❌</a>
-              <a href="/admin/editar-usuario.php?id=<?php echo $usuario->id; ?>">✏️</a>
+              <a href="/admin/formulario-usuario.php?id=<?php echo $usuario->id; ?>">✏️</a>
             </td>
           </tr>
         <?php
@@ -64,7 +64,7 @@ $usuarios = $servicio->obtenerUsuarios();
     </table>
   </div>
   <p>Para agregar un nuevo usuario a la plataforma, haz click en el siguiente botón:</p>
-  <a href="">➕ Agregar Usuario</a>
+  <a class="agregar-usuario" href="/admin/formulario-usuario.php">➕ Agregar Usuario</a>
 </div>
 
 

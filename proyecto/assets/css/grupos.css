@@ -1,14 +1,15 @@
-#usuarios {
+#grupos {
   flex-grow: 1;
   background-color: #7f8c8d;
   padding: 5%;
 }
 
-.tabla-usuarios {
+.tabla-grupos {
   background-color: #bdc3c7;
+  text-align: center;
 }
 
-.tabla-usuarios > table,
+.tabla-grupos > table,
 th,
 td {
   padding: 5px;
@@ -23,7 +24,7 @@ table {
   text-align: center;
 }
 
-.agregar-usuario {
+.agregar-grupo {
   padding: 10px;
   border: 1px solid black;
   background-color: #1abc9c;
@@ -33,7 +34,7 @@ table {
   border-radius: 5px;
 }
 
-.agregar-usuario:hover {
+.agregar-grupo:hover {
   background-color: #27ae60;
   transition-duration: 0.5s;
 }
