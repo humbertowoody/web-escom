@@ -88,7 +88,7 @@ class DBBloque
   public function actualizarBloque($nuevoBloque)
   {
     // Creamos la consulta.
-    $consulta = "UPDATE bloques SET nombre=\"" . $nuevoBloque->nombre . "\" WHERE id=" . $nuevoBloque->id . ";";
+    $consulta = "UPDATE bloques SET nombre=\"" . $nuevoBloque->nombre . "\",descripcion=\"" . $nuevoBloque->descripcion . "\",id_grupo=\"" . $nuevoBloque->id_grupo . "\" WHERE id=" . $nuevoBloque->id . ";";
 
     // Ejecutamos la consulta.
     $resultado = $this->conexion->query($consulta);
@@ -119,7 +119,7 @@ class DBBloque
   public function insertarBloque($nuevoBloque)
   {
     // Creamos la consulta.
-    $consulta = "INSERT INTO bloques (nombre) VALUES (\"" . $nuevoBloque->nombre . "\");";
+    $consulta = "INSERT INTO bloques (nombre,descripcion,id_grupo) VALUES (\"" . $nuevoBloque->nombre . "\",\"" . $nuevoBloque->descripcion . "\",\"" . $nuevoBloque->id_grupo . "\");";
 
     // Ejecutamos la consulta.
     $resultado = $this->conexion->query($consulta);
