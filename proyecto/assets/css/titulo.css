@@ -1,0 +1,59 @@
+#titulo {
+  display: flex;
+  flex-direction: row;
+  background-color: #34495e;
+  padding: 5px 10px;
+}
+
+.logo-titulo {
+  max-height: 50px;
+  background-color: #ecf0f1;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.nombre-titulo {
+  color: #bdc3c7;
+  align-self: center;
+  margin: 0;
+  padding-left: 20px;
+  flex-grow: 1;
+}
+
+.contenedor-usuario {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  align-items: flex-end;
+}
+
+.nombre-usuario {
+  font-size: medium;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.rol-usuario {
+  font-size: small;
+  color: #bdc3c7;
+  padding: 0;
+  margin: 0;
+}
+
+.cerrar-sesion {
+  font-size: smaller;
+  color: black;
+  margin: 2px;
+  padding: 4px 10px;
+  color: #ecf0f1;
+  text-decoration: none;
+  text-align: center;
+  background-color: #e74c3c;
+  border-radius: 5px;
+}
+
+.cerrar-sesion:hover {
+  background-color: #c0392b;
+  transition-duration: 0.5s;
+}

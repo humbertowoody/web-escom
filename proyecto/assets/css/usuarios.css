@@ -1,0 +1,24 @@
+#usuarios {
+  flex-grow: 1;
+  background-color: #7f8c8d;
+  padding: 5%;
+}
+
+.tabla-usuarios {
+  background-color: #bdc3c7;
+}
+
+.tabla-usuarios > table,
+th,
+td {
+  padding: 5px;
+  border: 1px dashed black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.acciones {
+  text-align: center;
+}
